@@ -9,7 +9,7 @@ import 'package:jose/jose.dart';
 
 class Service {
   Future<String> getAccessToken() async {
-    final jsonCredentials = await rootBundle.loadString('data/data.json');
+    final jsonCredentials = await rootBundle.loadString('data/socialapp-e72c2-8d392f3f1551.json');
 
     final cred = auth.ServiceAccountCredentials.fromJson(jsonCredentials);
 
